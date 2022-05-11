@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 180, 177, 177),
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: Column(
@@ -68,6 +68,10 @@ class _HomePageState extends State<HomePage> {
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10.0),
                                       color: Colors.white,
+                                      border: Border.all(
+                                        width: 2,
+                                        color: Colors.black,
+                                      ),
                                     ),
                                     child: const Center(
                                       child: Text(

@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:eng/pages/home/home.dart';
 import 'package:eng/providers/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -70,14 +71,6 @@ class _MainSwipeState extends State<MainSwipe> {
 
   Widget buildCard() => ClipRRect(
         borderRadius: BorderRadius.circular(20),
-        child: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage(widget.urlImage),
-              fit: BoxFit.cover,
-              alignment: Alignment(-0.3, 0),
-            ),
-          ),
-        ),
+        child: Home(),
       );
 }
